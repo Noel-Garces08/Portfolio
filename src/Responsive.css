@@ -1,0 +1,377 @@
+@media screen and (max-width: 1009px) {
+	.body {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.header .navigation .anne,
+	.header .designer {
+		font-size: 20px;
+		width: 100%;
+		line-height: 24px;
+	}
+
+	.header .speciality {
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.navigation .navigation-sub {
+		display: none;
+	}
+
+	.header-project {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 0px;
+	}
+
+	.header-project .anne {
+		display: none;
+	}
+
+	.footer .footer-statement {
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0px auto 11px auto;
+	}
+
+	.footer .footer-copyright {
+		font-size: 12px;
+		line-height: 36px;
+		margin: 10px auto 0px auto;
+	}
+
+	/* Optimize Main Page */
+
+	.projects {
+		width: 100%;
+		display: block;
+	}
+
+	.projects .left .projects-intro {
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.projects .left,
+	.projects .right {
+		width: 100%;
+	}
+
+	.projects .left {
+		margin-bottom: 30px;
+	}
+
+	.projects .right {
+		margin-bottom: 0px;
+	}
+
+	.project {
+		width: 100%;
+	}
+
+	.hmw {
+		width: calc(100% - 80px);
+		height: calc(100vw - 95px);
+	}
+
+	/* .hmw-exception {
+		width: calc(100%);
+	} */
+
+	.hmw .hmw-background {
+		width: 100%;
+		height: 100%;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.project-image {
+		width: 100%;
+		height: calc(100vw - 95px);
+		overflow: hidden;
+		margin-bottom: 19px;
+		box-shadow: 0px 0px 20px #e8e8e8;
+	}
+
+	.project-image-size {
+		width: 100%;
+		height: 100%;
+		transition: transform 0.4s;
+	}
+
+	.project-title {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.project-category {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.project-default,
+	.project-last {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	/* Optimize Articles Page */
+
+	.articles {
+		width: 100%;
+		display: block;
+	}
+
+	.articles .left .articles-intro {
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.articles .left,
+	.articles .right {
+		width: 100%;
+	}
+
+	.articles .left {
+		margin-bottom: 30px;
+	}
+
+	.articles .right {
+		margin-bottom: 0px;
+	}
+
+	.article-image {
+		width: 100%;
+		height: calc((100vw - 80px) * 0.6);
+		overflow: hidden;
+	}
+
+	.article-image-size {
+		width: 100%;
+		height: 100%;
+		transition: transform 0.4s;
+	}
+
+	.article-default,
+	.article-last {
+		width: 100%;
+		height: calc((100vw - 70px) * 0.9);
+		margin-bottom: 30px;
+	}
+
+	.article-contents {
+		padding: 20px 18px 20px 18px;
+	}
+
+	.article-title {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 2px;
+	}
+
+	.article-subtitle {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.article-date {
+		display: none;
+	}
+
+	/* Optimize About Page */
+
+	.about-image {
+		width: 100%;
+		height: calc((100vw - 80px) * 0.65);
+		box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.5);
+	}
+
+	.about-content {
+		margin-top: 30px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.about-title {
+		font-size: 20px;
+	}
+
+	.about-resume a {
+		width: 180px;
+		font-size: 14px;
+	}
+
+	/* Optimize PRISM Video Page */
+
+	.project-info {
+		width: 100%;
+	}
+
+	.project-info .project-title {
+		font-size: 22px;
+		line-height: 26px;
+		margin-top: 50px;
+	}
+
+	.project-domain {
+		font-size: 16px;
+		line-height: 18px;
+		padding-top: 12px;
+	}
+
+	.project-details-top,
+	.project-details {
+		font-size: 11px !important;
+		line-height: 20px;
+		width: 100%;
+		position: absolute;
+	}
+
+	.project-details-text {
+		color: white;
+	}
+
+	.project-details-top {
+		bottom: 20%;
+		z-index: 10;
+	}
+
+	.project-details-second {
+		bottom: 16%;
+		z-index: 10;
+	}
+
+	.project-details-third {
+		bottom: 12%;
+		z-index: 10;
+	}
+
+	.project-details-bottom {
+		bottom: 8%;
+		z-index: 10;
+	}
+
+	.summary-container {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.summary-container-left {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.summary-container-left .content-title {
+		width: calc(100% - 80px);
+	}
+
+	.summary-container-left .content {
+		width: calc(100% - 80px);
+		padding-bottom: 40px;
+	}
+
+	.summary-container-right {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.summary-container-right .content-title {
+		width: calc(100% - 80px);
+		padding-top: 0px;
+	}
+
+	.summary-container-right .content {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.content-title {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		line-height: 24px;
+		padding-top: 60px;
+	}
+
+	.content-title-second {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 20px;
+		line-height: 24px;
+		padding-top: 14px;
+	}
+
+	.content {
+		width: calc(100% - 80px);
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 14px;
+		line-height: 20px;
+		padding-top: 30px;
+	}
+
+	.end {
+		padding-bottom: 60px;
+	}
+
+	.bottom-navigation {
+		margin-top: 60px;
+		width: calc(100% - 40px);
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.link {
+		text-align: center;
+		width: 100%;
+		padding: 6px 0px 6px 0px;
+	}
+
+	/* Optimize PRISM Layout Page */
+
+	.prismlayout .cover {
+		height: 100vh;
+	}
+
+	.prismlayout .cover .cover-image {
+		width: 560px;
+		position: absolute;
+		top: 28%;
+		left: 10%;
+		opacity: 0.4;
+	}
+
+	.prismlayout .project-details,
+	.prismlayout .project-details-top {
+		color: white;
+	}
+
+	.prismlayout .link a {
+		color: #9a9a9a;
+	}
+}
+
+@media screen and (min-width: 1010px) {
+	.navigation button,
+	.mobile {
+		display: none;
+	}
+}
