@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectNav from './ProjectNav';
+
 import img01 from '../img/project-tn-02-tran.png';
 
-const LilyPhotography = () => {
+const TodoList = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -12,12 +13,12 @@ const LilyPhotography = () => {
 		<section className='project-content prismlayout'>
 			<div className='cover'>
 				<ProjectNav
-					title='Lily Photography'
-					domain='Static Website'
+					title='Todo List'
+					domain='Web Application'
 					roles='Developer: Noel Garces'
 					technologies={['HTML5, CSS3, JavaScript']}
-					githubLink='https://github.com/Noel-Garces08/Photography'
-					liveLink='https://lily-photography.imfast.io/'
+					githubLink='https://noel-garces08.github.io/todo_list/'
+					liveLink='https://noel-garces08.github.io/todo_list/'
 				/>
 				<img src={img01} alt='Cover' className='cover-image' />
 			</div>
@@ -42,12 +43,12 @@ const LilyPhotography = () => {
 			<div className='bottom-navigation'>
 				<Link to='/todo-list' className='link link-inactive'>Todo List</Link>
 				<Link to='/amazon-clone' className='link link-inactive'>Amazon Clone</Link>
-				<Link to='/four-card-grid-component' className='link link-inactive'>Four Card Grid Component</Link>
+				<Link to='/four-card-grid-component' className='link link-active'>Four Card Grid Component</Link>
 				<Link to='/single-price-grid-component' className='link link-inactive'>Single Price Grid Component</Link>
-				<Link to='/lily-photography' className='link link-active'>Lily Photography</Link>
+				<Link to='/lily-photography' className='link link-inactive'>Lily Photography</Link>
 			</div>
 		</section>
 	);
 };
 
-export default LilyPhotography;
+export default TodoList;

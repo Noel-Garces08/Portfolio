@@ -5,6 +5,7 @@ import ImageOne from './../../img/project-tn-01.png';
 import ImageTwo from './../../img/project-tn-02.png';
 import ImageThree from './../../img/project-tn-03.png';
 import ImageFour from './../../img/project-tn-04.png';
+import ImageTodoList from './../../img/project_todo_list.png';
 
 const Projects = () => {
 	const [hamburgerState, setHamburgerState] = useState('off');
@@ -93,14 +94,21 @@ const Projects = () => {
 						people's lives for the
 						<span className='bold'> better</span>.
 					</p>
-
+					<Project
+						aos=''
+						image={ImageTodoList}
+						link='/todo-list'
+						title='Todo List'
+						category='Web Application'
+						index='0'
+					/>
 					<Project
 						aos=''
 						image={ImageOne}
 						link='/amazon-clone'
 						title='Amazon Clone'
 						category='Web Application'
-						index='0'
+						index='1'
 					/>
 					<Project
 						aos=''
@@ -108,7 +116,7 @@ const Projects = () => {
 						link='/four-card-grid-component'
 						title='Four Card Grid Component'
 						category='Static Website'
-						index='1'
+						index='2'
 					/>
 				</div>
 				{/* RIGHT SIDE */}
@@ -119,7 +127,7 @@ const Projects = () => {
 						link='/single-price-grid-component'
 						title='Single Price Grid Component'
 						category='Static Website'
-						index='2'
+						index='3'
 					/>
 					<Project
 						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
@@ -127,7 +135,7 @@ const Projects = () => {
 						link='/lily-photography'
 						title='Lily Photography'
 						category='Static Website'
-						index='3'
+						index='4'
 					/>
 				</div>
 			</section>

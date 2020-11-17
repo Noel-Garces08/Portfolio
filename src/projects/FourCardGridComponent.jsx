@@ -41,24 +41,11 @@ const FourCardGridComponent = () => {
 			</div>
 
 			<div className='bottom-navigation'>
-				<Link to='/amazon-clone' className='link link-inactive'>
-					Amazon Clone
-				</Link>
-				<Link
-					to='/four-card-grid-component'
-					className='link link-active'
-				>
-					Four Card Grid Component
-				</Link>
-				<Link
-					to='/single-price-grid-component'
-					className='link link-inactive'
-				>
-					Single Price Grid Component
-				</Link>
-				<Link to='/lily-photography' className='link link-inactive'>
-					Lily Photography
-				</Link>
+				<Link to='/todo-list' className='link link-inactive'>Todo List</Link>
+				<Link to='/amazon-clone' className='link link-inactive'>Amazon Clone</Link>
+				<Link to='/four-card-grid-component' className='link link-active'>Four Card Grid Component</Link>
+				<Link to='/single-price-grid-component' className='link link-inactive'>Single Price Grid Component</Link>
+				<Link to='/lily-photography' className='link link-inactive'>Lily Photography</Link>
 			</div>
 		</section>
 	);
