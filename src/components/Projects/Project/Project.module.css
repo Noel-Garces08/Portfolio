@@ -1,0 +1,11 @@
+.links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.link {
+    font-family: circular-std-book, Arial, sans-serif;
+    font-size: 14px;
+    padding-left: 16px;
+    color: #fff;
+}

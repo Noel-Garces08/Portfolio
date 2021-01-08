@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Project from './Project/Project';
-import ImageOne from './../../img/project-tn-01.png';
-import ImageTwo from './../../img/project-tn-02.png';
-import ImageThree from './../../img/project-tn-03.png';
-import ImageFour from './../../img/project-tn-04.png';
-import ImageTodoList from './../../img/project_todo_list.png';
+
+import HandHApparel from './../../img/h&h-apparel-project.png';
+import TheSocialNetwork from './../../img/the-social-network-project.png';
+import DevOutlet from './../../img/dev-outlet-project.png';
+import KeyboardFreak from './../../img/keyboard-freak-project.png';
+import PrimeBeefSteak from './../../img/prime-beef-steak.png';
+import Loruki from './../../img/loruki-project.png';
+import LilyPhotography from './../../img/lily-photography-project.png';
+import FourCardGridLayout from './../../img/four-card-grid-layout.png';
+import ModernTaskTracker from './../../img/modern-task-tracker-project.png';
+import SinglePriceGridComponent from './../../img/single-pricd-grid-component-project.png';
 
 const Projects = () => {
 	const [hamburgerState, setHamburgerState] = useState('off');
@@ -39,11 +45,7 @@ const Projects = () => {
 							Noel Garces
 						</Link>
 					</div>
-					<button
-						className='hamburger hamburger--spin mobile'
-						type='button'
-						onClick={toggleMenu}
-					>
+					<button className='hamburger hamburger--spin mobile' type='button' onClick={toggleMenu}>
 						<span className='hamburger-box'>
 							<span className='hamburger-inner'></span>
 						</span>
@@ -55,9 +57,9 @@ const Projects = () => {
 									Work
 								</Link>
 							</div>
-							<div className='articles-mobile'>
+							{/* <div className='articles-mobile'>
 								<Link to='/articles'>Articles</Link>
-							</div>
+							</div> */}
 							<div className='about-mobile'>
 								<Link to='/about'>About</Link>
 							</div>
@@ -69,9 +71,9 @@ const Projects = () => {
 								Work
 							</Link>
 						</div>
-						<div className='articles'>
+						{/* <div className='articles'>
 							<Link to='/articles'>Articles</Link>
-						</div>
+						</div> */}
 						<div className='about'>
 							<Link to='/about'>About</Link>
 						</div>
@@ -96,46 +98,96 @@ const Projects = () => {
 					</p>
 					<Project
 						aos=''
-						image={ImageTodoList}
-						link='/todo-list'
-						title='Todo List'
+						image={HandHApparel}
+						title='H&HAPPAREL (In Progress)'
 						category='Web Application'
+						githubLink="https://github.com/Noel-Garces08/handh_apparel"
+						liveLink="https://keen-aryabhata-7c2854.netlify.app"
 						index='0'
 					/>
 					<Project
 						aos=''
-						image={ImageOne}
-						link='/amazon-clone'
-						title='Amazon Clone'
+						image={DevOutlet}
+						title='Dev Outlet'
 						category='Web Application'
+						githubLink=""
+						liveLink=""
 						index='1'
 					/>
 					<Project
 						aos=''
-						image={ImageTwo}
-						link='/four-card-grid-component'
-						title='Four Card Grid Component'
+						image={PrimeBeefSteak}
+						title='Prime Beef Steak'
 						category='Static Website'
+						githubLink="https://github.com/Noel-Garces08/prime_beef_steak"
+						liveLink="https://noel-garces08.github.io/prime_beef_steak/"
 						index='2'
+					/>
+					<Project
+						aos=''
+						image={LilyPhotography}
+						title='Lily Photography'
+						category='Static Website'
+						githubLink="https://github.com/Noel-Garces08/lily_photography"
+						liveLink="https://noel-garces08.github.io/lily_photography/"
+						index='3'
+					/>
+					<Project
+						aos=''
+						image={ModernTaskTracker}
+						title='Modern Task Tracker'
+						category='Static Website'
+						githubLink="https://github.com/Noel-Garces08/todo_list"
+						liveLink="https://noel-garces08.github.io/todo_list/"
+						index='4'
 					/>
 				</div>
 				{/* RIGHT SIDE */}
 				<div className='right'>
 					<Project
 						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
-						image={ImageThree}
-						link='/single-price-grid-component'
-						title='Single Price Grid Component'
-						category='Static Website'
-						index='3'
+						image={TheSocialNetwork}
+						title='The Social Network (In Progress)'
+						category='Web Application'
+						githubLink="https://github.com/Noel-Garces08/social_network"
+						liveLink="https://thesocialnetwork-master.netlify.app"
+						index='5'
 					/>
 					<Project
 						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
-						image={ImageFour}
-						link='/lily-photography'
-						title='Lily Photography'
+						image={KeyboardFreak}
+						title='Keyboard Freak (In Progress)'
+						category='Web Application'
+						githubLink=""
+						liveLink=""
+						index='6'
+					/>
+					<Project
+						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
+						image={Loruki}
+						title='Loruki'
 						category='Static Website'
-						index='4'
+						githubLink="https://github.com/Noel-Garces08/loruki"
+						liveLink="https://noel-garces08.github.io/loruki/"
+						index='7'
+					/>
+					<Project
+						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
+						image={FourCardGridLayout}
+						title='Four Card Grid Layout'
+						category='Static Website'
+						githubLink="https://github.com/Noel-Garces08/Four-Card-Feature-Section"
+						liveLink="https://noel-garces08.github.io/four-card-feature-section/"
+						index='8'
+					/>
+					<Project
+						aos={window.innerWidth <= 1009 ? 'fade-up' : ''}
+						image={SinglePriceGridComponent}
+						title='Single Price Grid Component'
+						category='Static Website'
+						githubLink="https://github.com/Noel-Garces08/Single-Price-Grid-Component"
+						liveLink="https://noel-garces08.github.io/Single-Price-Grid-Component/"
+						index='9'
 					/>
 				</div>
 			</section>
@@ -144,5 +196,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// Break point 1009

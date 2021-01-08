@@ -4,13 +4,6 @@ import './App.css';
 import './Responsive.css';
 import './Hamburgers.css';
 import { Projects, About, Articles, Footer } from './components/';
-import {
-	TodoList,
-	AmazonClone,
-	FourCardGridComponent,
-	SinglePriceGridComponent,
-	LilyPhotography,
-} from './projects';
 import AOS from 'aos';
 
 const App = () => {
@@ -27,11 +20,6 @@ const App = () => {
 		<Router>
 			<div className='App'>
 				<Route exact path='/' component={Projects} />
-				<Route path='/todo-list' component={TodoList} />
-				<Route path='/amazon-clone' component={AmazonClone} />
-				<Route path='/four-card-grid-component' component={FourCardGridComponent}/>
-				<Route path='/single-price-grid-component' component={SinglePriceGridComponent}/>
-				<Route path='/lily-photography' component={LilyPhotography} />
 				<Route path='/articles' component={Articles} />
 				<Route path='/about' component={About} />
 				<Footer />

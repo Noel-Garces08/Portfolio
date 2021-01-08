@@ -79,6 +79,7 @@
 .header .navigation {
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 }
 
 .header .navigation div a {
@@ -137,7 +138,7 @@
 }
 
 .header .navigation-sub {
-	width: 276px;
+	/* width: 276px; */
 	font-size: 22px;
 	display: flex;
 }
@@ -162,106 +163,6 @@
 	font-size: 20px;
 	color: #bbbbbb;
 	line-height: 36px;
-}
-
-/* Project Header Styles */
-.header-project {
-	width: 784px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 115px;
-	font-family: circular-std-medium, Arial, sans-serif;
-}
-
-.header-project .navigation {
-	width: 100%;
-	display: flex;
-}
-
-.header-project .navigation .navigation-sub div a,
-.header-project .navigation .anne a {
-	text-decoration: none;
-	transition: color 0.2s;
-	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-}
-
-.header-project .navigation .navigation-sub div a:hover,
-.header-project .navigation .anne a:hover {
-	color: white !important;
-}
-
-.header-project .navigation .navigation-sub div a:visited,
-.header-project .navigation .anne a:visited {
-	color: inherit;
-}
-
-.header-project .overlay {
-	visibility: hidden;
-	position: fixed;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
-	opacity: 0;
-	transition: opacity 0.5s;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
-.header-project .overlay .submenus {
-	height: 180px;
-	margin-top: auto;
-	margin-bottom: auto;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.header-project .overlay .submenus .work-mobile,
-.header-project .overlay .submenus .articles-mobile,
-.header-project .overlay .submenus .about-mobile {
-	width: 100%;
-	font-size: 24px;
-}
-
-.header-project .overlay .submenus div a {
-	color: #bbbbbb !important;
-	text-decoration: none;
-}
-
-.header-project .overlay .submenus div a:hover {
-	color: black !important;
-}
-
-.show {
-	visibility: visible !important;
-	opacity: 1 !important;
-}
-.hide {
-	visibility: hidden !important;
-}
-
-.header-project .navigation-sub {
-	width: 276px;
-	font-size: 22px;
-	display: flex;
-	z-index: 2;
-}
-
-.header-project .navigation .anne {
-	font-size: 26px;
-	width: calc(100% - 276px);
-	line-height: 36px;
-	color: white;
-}
-
-.header-project .navigation .navigation-sub .work,
-.header-project .navigation .navigation-sub .articles {
-	padding-right: 40px;
 }
 
 /* Footer */
@@ -350,7 +251,7 @@
 }
 
 .project a:visited {
-	color: black;
+	color: #fff;
 }
 
 .hmw {
@@ -362,22 +263,6 @@
 
 .show-hmw {
 	opacity: 1;
-}
-
-.change-color-0 {
-	color: #0b9c96;
-}
-
-.change-color-1 {
-	color: #e96f5e;
-}
-
-.change-color-2 {
-	color: #fbc060;
-}
-
-.change-color-3 {
-	color: #72a4ee;
 }
 
 .change-scale {
@@ -414,12 +299,14 @@
 	overflow: hidden;
 	/* margin-bottom: 19px; */
 	box-shadow: 0px 0px 20px #e8e8e8;
+	background-color: #1C2122;
 }
 
 .project-image-size {
 	width: 369px;
 	height: 369px;
 	transition: transform 0.4s;
+	object-fit: contain;
 }
 
 .project-title {
@@ -720,7 +607,7 @@
 	color: white;
 }
 
-.bottom-navigation {
+/* .bottom-navigation {
 	margin-top: 60px;
 	width: 691px;
 	margin-left: auto;
@@ -747,38 +634,14 @@
 .link-inactive {
 	color: #d1d1d1;
 	text-decoration: none;
-}
+} */
 
 /* PROJECT PAGE - PRISM LAYOUT */
 
 .prismlayout .cover {
 	width: 100%;
 	height: 540px;
-	background: -webkit-linear-gradient(
-		left,
-		rgb(26, 26, 27) 0%,
-		rgb(49, 49, 51) 100%
-	);
-	background: -o-linear-gradient(
-		left,
-		rgb(26, 26, 27) 0%,
-		rgb(49, 49, 51) 100%
-	);
-	background: -ms-linear-gradient(
-		left,
-		rgb(26, 26, 27) 0%,
-		rgb(49, 49, 51) 100%
-	);
-	background: -moz-linear-gradient(
-		left,
-		rgb(26, 26, 27) 0%,
-		rgb(49, 49, 51) 100%
-	);
-	background: linear-gradient(
-		to right,
-		rgb(26, 26, 27) 0%,
-		rgb(49, 49, 51) 100%
-	);
+	background: #1C2021;
 	overflow: hidden;
 	position: relative;
 	z-index: 0;
@@ -796,15 +659,13 @@
 .prismlayout .cover .cover-image {
 	width: 540px;
 	position: absolute;
-	top: 80px;
+	top: 120px;
 	left: 48%;
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
 }
 
 .prismlayout .summary {
 	width: 100%;
-	background-color: #2e2e2e;
+	background-color: #252829;
 }
 
 .prismlayout .link a {

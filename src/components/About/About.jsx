@@ -49,9 +49,9 @@ const About = () => {
 							<div className='work-mobile'>
 								<Link to='/'>Work</Link>
 							</div>
-							<div className='articles-mobile'>
+							{/* <div className='articles-mobile'>
 								<Link to='/articles'>Articles</Link>
-							</div>
+							</div> */}
 							<div className='about-mobile'>
 								<Link to='/about' className='active'>
 									About
@@ -63,9 +63,9 @@ const About = () => {
 						<div className='work'>
 							<Link to='/'>Work</Link>
 						</div>
-						<div className='articles'>
+						{/* <div className='articles'>
 							<Link to='/articles'>Articles</Link>
-						</div>
+						</div> */}
 						<div className='about'>
 							<Link to='/about' className='active'>
 								About
