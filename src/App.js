@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import './Responsive.css';
 import './Hamburgers.css';
-import { Projects, About, Articles, Footer } from './components/';
+import { Projects, About, Footer } from './components/';
 import AOS from 'aos';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
 		<Router>
 			<div className='App'>
 				<Route exact path='/' component={Projects} />
-				<Route path='/articles' component={Articles} />
+				{/* <Route path='/articles' component={Articles} /> */}
 				<Route path='/about' component={About} />
 				<Footer />
 			</div>
